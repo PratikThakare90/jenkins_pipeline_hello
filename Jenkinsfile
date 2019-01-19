@@ -8,6 +8,11 @@ node {
         echo "testing"
     }
 }
+node {
+    stage('demo'){
+        echo "Demo"
+    }
+}
 stage('Get approval'){
     input "Deploy to qa?"
 }
